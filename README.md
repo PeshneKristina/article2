@@ -63,20 +63,18 @@ class Button extends React.Component {
 class Button extends React.Component {
 
         constructor(props) {
-	super(props);
-this.state = { clickNumber : 0}; 
+	    super(props);
+	    this.state = { clickNumber : 0}; 
         }
 
-const onClick = () => {
-     this.setState({ count: this.state.clickNumber + 1 });
-props.onClick();
-
-}
+	const onClick = () => {
+	   this.setState({ count: this.state.clickNumber + 1 });
+	   props.onClick();
+	}
 
         render() {
-	<button onClick={() => onClick()}>You clicked { this.state.clickNumber } times!</button>
+	   <button onClick={() => onClick()}>You clicked { this.state.clickNumber } times!</button>
        }
-	
 }
 ```
 В данном примере мы добавили объект состояния в класс Button, который отслеживает изменение количества нажатий на кнопку и отображает актуальную информацию на странице.
