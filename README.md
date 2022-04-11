@@ -65,12 +65,12 @@ class Button extends React.Component {
 
         constructor(props) {
 	super(props);
-this.state = { clickNumber : 0}; 
+	this.state = { clickNumber : 0}; 
         }
 
 const onClick = () => {
      this.setState({ count: this.state.clickNumber + 1 });
-    props.onClick();
+     props.onClick();
 
 }
 
