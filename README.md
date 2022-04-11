@@ -27,7 +27,7 @@
 
 Проще всего объявить React-компонент как стрелочную функцию:
 
-#Пример 1:
+Пример 1:
 ```
 const Button = (props) => (
 	<button onClick={props.onClick}>Click me!</button>
@@ -39,7 +39,7 @@ const Button = (props) => (
 
 Перепишем наш функциональный компонент в виде классового: 
 
-#Пример 2:
+Пример 2:
 ```
 class Button extends React.Component {
 
@@ -59,7 +59,7 @@ class Button extends React.Component {
 
 Приведенные выше примеры представляют собой stateless компоненты. Попробуем добавить объект состояния в классовый компонент. 
 
-#Пример 3:
+Пример 3:
 ```
 class Button extends React.Component {
 
@@ -88,7 +88,7 @@ const onClick = () => {
 
 Давайте добавим состояние в наш функциональный компонент из примера 1: 
 
-#Пример 4:
+Пример 4:
 
 ```
 function Button = () => {
